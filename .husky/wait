@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+pids=""
+for i in $(seq $#)
+do
+  ${!i} &
+  pids="$pids $!"
+done
+
+for pid in $pids
+do
+  wait $pid
+done
