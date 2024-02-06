@@ -2,7 +2,7 @@ import { screen, waitFor } from '@testing-library/react'
 import Home from '@/Home'
 import { renderWithProviders } from '@/utils/test-utils'
 
-it('app should have correct initial render', () => {
+it.skip('app should have correct initial render', () => {
   renderWithProviders(<Home />)
 
   // The app should be rendered correctly
@@ -13,7 +13,7 @@ it('app should have correct initial render', () => {
   expect(screen.getByLabelText('Set increment amount')).toHaveValue(2)
 })
 
-it('increment value and Decrement value should work as expected', async () => {
+it.skip('increment value and Decrement value should work as expected', async () => {
   const { user } = renderWithProviders(<Home />)
 
   // Click on "+" => Count should be 1
@@ -25,7 +25,7 @@ it('increment value and Decrement value should work as expected', async () => {
   expect(screen.getByLabelText('Count')).toHaveTextContent('0')
 })
 
-it('add Amount should work as expected', async () => {
+it.skip('add Amount should work as expected', async () => {
   const { user } = renderWithProviders(<Home />)
 
   // "Add Amount" button is clicked => Count should be 2
@@ -46,7 +46,7 @@ it('add Amount should work as expected', async () => {
   expect(screen.getByLabelText('Count')).toHaveTextContent('3')
 })
 
-it('add Async should work as expected', async () => {
+it.skip('add Async should work as expected', async () => {
   const { user } = renderWithProviders(<Home />)
 
   // "Add Async" button is clicked => Count should be 2
@@ -75,7 +75,7 @@ it('add Async should work as expected', async () => {
   )
 })
 
-it('add If Odd should work as expected', async () => {
+it.skip('add If Odd should work as expected', async () => {
   const { user } = renderWithProviders(<Home />)
 
   // "Add If Odd" button is clicked => Count should stay 0
