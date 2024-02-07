@@ -1,13 +1,13 @@
 import { Outlet, Route, Routes } from 'react-router-dom'
-import { Header } from './components/header'
-import Home from './Home'
+import Home from '@/Home'
+import { Header } from '@/components/header'
 
 export default function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/bestiaires" />
+        <Route path="/bestiaire" />
         <Route path="/objets-magiques" />
       </Route>
     </Routes>

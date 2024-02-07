@@ -8,7 +8,7 @@
     "start": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "vitest run",
+    "test": "vitest",
     "format": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
@@ -18,8 +18,9 @@
     "@antfu/eslint-config": "^2.6.3",
     "@commitlint/cli": "18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
-    "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@reduxjs/toolkit": "^2.0.1",
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
     "autoprefixer": "^10.4.17",
     "daisyui": "^4.6.0",
     "husky": "8.0.3",
@@ -31,6 +32,7 @@
     "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
+    "@iconify-json/mdi": "^1.1.64",
     "@testing-library/dom": "^9.3.4",
     "@testing-library/jest-dom": "^6.2.0",
     "@testing-library/react": "^14.1.2",
@@ -41,6 +43,7 @@
     "eslint": "^8.56.0",
     "happy-dom": "13.2.0",
     "typescript": "^5.3.3",
+    "unplugin-icons": "^0.18.5",
     "vite": "^5.0.12",
     "vitest": "^1.2.1"
   }
