@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-.husky/wait "pnpm run test"
+.husky/wait "pnpm run test:run"
