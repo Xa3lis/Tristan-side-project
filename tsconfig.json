@@ -7,12 +7,14 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "&/*": ["./test/*"]
     },
     "resolveJsonModule": true,
     "types": [
       "vitest/globals",
-      "vite/client"
+      "vite/client",
+      "unplugin-icons/types/react"
     ],
     "allowJs": false,
     "strict": true,
