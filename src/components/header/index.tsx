@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { Switcher } from '@/components/switcher'
 import type { IMenuItem } from '@/models/menu'
 import MdiUserCircle from '~icons/mdi/user-circle'
